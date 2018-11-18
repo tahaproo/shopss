@@ -637,7 +637,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.startsWith("f!stats")) {
+    if (message.content.startsWith("&stats")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .addField('Uptime', timeCon(process.uptime()), true)
