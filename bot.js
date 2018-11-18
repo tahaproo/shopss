@@ -1119,7 +1119,7 @@ client.on('ready',  () => {
 client.on('ready', function(){
     client.user.setStatus("dnd");
     var ms = 100000 ;
-    var setGame = [`&help ${client.guilds.size} `];
+    var setGame = [`&help`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -1130,7 +1130,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/KiNg66S`);
+        client.user.setGame(setGame[i],`http://www.twitch.tv/adminunivers`);
     }, ms);100000
 
 });
