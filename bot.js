@@ -12513,4 +12513,11 @@ client.on('message', msg => {
           }
         }
 })
+client.on('message', message => {
+    if (message.content.startsWith("&invites")) {
+    message.guild.fetchInvites()
+    .then(invites => message.channel.send(`لقد دعوت  ${invites.find(invite => invite.inviter.id === message.author.id).uses} عضو لهاذا السيرفر`))
+     
+    }
+});
 client.login(process.env.BOT_TOKEN);
