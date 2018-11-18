@@ -12487,7 +12487,7 @@ client.on('message', message => {
 **`)
       message.author.sendEmbed(Embed11)
     }
-}); client.on('message', message => {
+}); 
 
 
 client.login(process.env.BOT_TOKEN);
